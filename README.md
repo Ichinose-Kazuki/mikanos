@@ -1,6 +1,8 @@
 # My Notes
 ## Environment
 - Ubuntu 23.10
+- ld.lld 14.0.6
+- llvm-ar 16.0.6 Optimized build.
 
 ## edk2
 Ubuntu 23.10's llvm-ar is llvm-ar-14 by default. This causes the "Opaque pointers are only supported in -opaque-pointers mode (Producer: 'LLVM16.0.6' Reader: 'LLVM 14.0.6')" error while `build`.
