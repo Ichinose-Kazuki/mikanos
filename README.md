@@ -1,5 +1,17 @@
-# MikanOS
+# My Notes
+## Environment
+- Ubuntu 23.10
 
+## edk2
+Ubuntu 23.10's llvm-ar is llvm-ar-14 by default. This causes the "Opaque pointers are only supported in -opaque-pointers mode (Producer: 'LLVM16.0.6' Reader: 'LLVM 14.0.6')" error while `build`.
+
+To fix this, ↓
+```bash
+sudo ln -sf /usr/bin/llvm-ar-16 /etc/alternatives/llvm-ar
+```
+llvm-ar versions may vary depending on Ubuntu version.
+
+# MikanOS 
 MikanOS はレガシーフリーなアーキテクチャ（UEFI BIOS、Intel 64 モード）で動作する教育用オペレーティングシステムです。
 
 ## ファイル構成
