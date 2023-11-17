@@ -11,7 +11,20 @@ To fix this, ↓
 ```bash
 sudo ln -sf /usr/bin/llvm-ar-16 /etc/alternatives/llvm-ar
 ```
-llvm-ar versions may vary depending on Ubuntu version.
+
+## osbook_03a and later
+https://github.com/uchan-nos/os-from-zero/issues/134
+https://github.com/uchan-nos/mikanos/commit/8bd6c4bd7a59a46fd078bc2b778696084e8daee2
+
+To install ld.lld-7, ↓
+```bash
+echo "deb http://cz.archive.ubuntu.com/ubuntu focal main universe" | sudo tee -a /etc/apt/sources.list
+```
+then install and set link
+```bash
+sudo apt install lld-7
+sudo ln -sf /usr/bin/ld.lld-7 /etc/alternatives/ld.lld
+```
 
 # MikanOS 
 MikanOS はレガシーフリーなアーキテクチャ（UEFI BIOS、Intel 64 モード）で動作する教育用オペレーティングシステムです。
