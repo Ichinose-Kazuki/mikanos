@@ -1,3 +1,7 @@
+# My Notes
+- build
+    ${=CPPFLAGS}
+
 # mikanos
 MikanOS: An Educational Operating System
 

@@ -7,4 +7,5 @@ extern "C" void KernelMain(uint64_t frame_buffer_base,
     frame_buffer[i] = i % 256;
   }
   while (1) __asm__("hlt");
+  // return;
 }
