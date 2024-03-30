@@ -1,5 +1,11 @@
 # My Notes
+
 ## Environment
+- Arch Linux
+    - `docker`, `docker-buildx` installed
+- [dev container](https://github.com/sarisia/mikanos-devcontainer)
+
+## Environment (old)
 - Ubuntu 23.10
 - ld.lld 14.0.6
 - llvm-ar 16.0.6 Optimized build.
